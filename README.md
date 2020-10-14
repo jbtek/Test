@@ -79,13 +79,16 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
     "shortid": "^2.2.8"
 
 ### Service Worker
+### We delete the default service worker and define the static folders files that inclued chunks.js,bundles.js, css etc that is in build folder after `npm run build`
 
+### define targetsToCache array where api base url will be define.
 var CACHE_NAME = 'my-cache_name';
 var targetsToCache = [
   '/styles/myStyles.scss',
-  'www.stackoverflow.com/'
+  'http://kaboom.rksv.net/api/'
 ];
 
+### Register here and cached the data.
 self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open(CACHE_NAME)
