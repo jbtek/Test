@@ -7,9 +7,17 @@ const API = {
 }
 /**
  * set the base url for all the REST
+ * Adding these headers on client is not good practice
+ * it must will be added on server side.
  */
 export const axiosInstance = axios.create({
-    baseURL: 'http://kaboom.rksv.net/api/'
+    baseURL: 'http://kaboom.rksv.net/api/',
+    headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Content-Type': 'application/json',
+        "Access-Control-Allow-Headers":"content-type",
+		"Access-Control-Allow-Methods": "PUT, POST, GET, DELETE, PATCH, OPTIONS"
+      }
   });
 
 export const makeApiCall = (url,data,method,params) => {

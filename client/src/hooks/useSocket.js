@@ -34,7 +34,7 @@ const useSocket = () => {
             socketInstance.unsubscribe();
             socketInstance = null;
         }
-    }); 
+    },[]); 
 
     //return the object with this updated values.
     return {socketData, socketError}
