@@ -65,11 +65,10 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/ad
 This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
 ### `npm run build` fails to minify
-
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
 
-React stock chart
+### React stock chart
     "d3-dsv": "^1.0.8",
     "d3-format": "^1.2.1",
     "d3-scale": "^1.0.7",
@@ -79,7 +78,7 @@ React stock chart
     "react-stockcharts": "^0.7.8",
     "shortid": "^2.2.8"
 
-Service Worker
+### Service Worker
 
 var CACHE_NAME = 'my-cache_name';
 var targetsToCache = [
@@ -96,7 +95,7 @@ self.addEventListener('install', function(event) {
   );
 });
 
-//We need to implement this for any api workings...
+### We need to implement this for any api workings...
 self.addEventListener('fetch', function(event) {
     event.respondWith(
         caches.match(event.request).then(function(response) {
