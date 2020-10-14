@@ -68,7 +68,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
 
-### React stock chart
+### React stock chart used
     "d3-dsv": "^1.0.8",
     "d3-format": "^1.2.1",
     "d3-scale": "^1.0.7",
